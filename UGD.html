@@ -16,6 +16,7 @@
             <p class="lastResult"></p>
             <p class="lowOrHi"></p>
         </div>
+        <tr><td>Nama |</td><td>NPM |</td><td>KLS |</td></tr>
     </body>
         <script>
     var randomNumber = Math.floor(Math.random() * 10) + 1;
@@ -40,7 +41,7 @@
         lowOrHi.textContent = '';
         setGameOver();
       } else if (guessCount === 3) {
-        lastResult.textContent = '!!!Sayang sekali Anda Kurang Beruntung Permainan Selesai, Coba lagi !!!';
+        lastResult.textContent = '!!!Sayang sekali kesempatan sudah habis, Mau coba lagi???';
         lowOrHi.textContent = '';
         setGameOver();
       } else {
@@ -87,6 +88,9 @@
                 el: '#app',
                 data: {
                     judul: "Tebak Gambar",
+                    nama: "Afif",
+                    npm: "180709629",
+                    kelas: "B,"
                 },
             });
         </script>
